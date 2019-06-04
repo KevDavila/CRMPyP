@@ -8,6 +8,7 @@ $alumns = ClienteData::getAll();
 	 
 	<br>
 	<br>
+	<form action="index.php?view=historial" method="post">
 			<?php
 			if(count($alumns)>0){
 				// si hay usuarios
@@ -23,11 +24,12 @@ $alumns = ClienteData::getAll();
 				<th>Correo</th>
 			<!--	<th>Opciones</th>-->
 				</thead>
+				
 				<?php
 				foreach($alumns as $al){
 					$alumn = $al;
 					?>
-					<form action="index.php?view=historial" method="post">
+					
 					<tr>
 					<td><input type="checkbox" name="id" value="id_cliente"><?php echo $alumn->id_cliente;?></td>
 					<td><?php echo $alumn->nombre;?></td>
@@ -40,9 +42,9 @@ $alumns = ClienteData::getAll();
 					 <a href="index.php?view=editcliente&id_cliente<?php echo $alumn->id_cliente;?>" class="btn btn-warning btn-xs">Editar</a>-->
 
 					</tr>
-					<input type="submit" name="submit">
-					</form>
+				
 					<?php
+						
 
 				}
 				echo "</table>";
@@ -50,5 +52,7 @@ $alumns = ClienteData::getAll();
 				echo "<p class='alert alert-danger'>No hay Clientes</p>";
 			}
 			?>
+			<input type="submit" name="submit">
+					</form>
 	</div>
 </div>
