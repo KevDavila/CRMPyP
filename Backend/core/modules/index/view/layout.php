@@ -28,7 +28,7 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#6B8E23;">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -37,12 +37,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Playeras & Playeras<sup ><small><span class="label label-success"></span></small></sup> </a>
+          <a class="navbar-brand" style="color: #fff;">Playeras & Playeras<sup ><small><span class="label label-success"></span></small></sup> </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
+          <ul class="nav navbar-nav side-nav" style="background-color:#6B8E23;">
          <ul class="nav navbar-nav">
           </ul>
 <?php if(!isset($_SESSION["user_id"])):?>
@@ -53,7 +53,7 @@ $u=null;
 if(Session::getUID()!=""):
   $u = UserData::getById(Session::getUID());
 ?>
-          <li><a href="index.php?view=home"><i class="fa fa-home"></i> Inicio</a></li>
+          <li><a href="index.php?view=home" style="color: #fff;"><i class="fa fa-home"></i> Inicio</a></li>
           <!--<li><a href="#" class="fa fa-user" data-toggle="dropdown"> Recursos Humanos<span class="caret"></span></a>
 
         <ul class="dropdown-menu">
@@ -125,15 +125,15 @@ if(Session::getUID()!=""):
           <?php } ?>
 -->
           <?php if($u->is_admin):?>
-            <li><a href="#" class="fa fa-clipboard" data-toggle="dropdown"> CRM P&P<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="index.php?view=marketing"><i class="fa fa-wifi"></i> Marketing</a></li>
+           <!--<li><a href="#" class="fa fa-clipboard" data-toggle="dropdown"> CRM P&P<span class="caret"></span></a>
+        <ul class="dropdown-menu">-->
+          <li><a href="index.php?view=marketing"style="color: #fff;"><i class="fa fa-wifi"></i> Marketing</a></li>
           <!--<li><a href="index.php?view=encuestas"><i class="fa fa-comments-o"></i> Encuestas Marketing</a></li>-->
-          <li><a href="index.php?view=sum"><i class="fa fa-male"></i> Almacen</a></li>
-          <li><a href="index.php?view=cotizacion"><i class="fa fa-table"></i> Cotizaciones</a></li>
-          <li><a href="index.php?view=venta"><i class="fa fa-usd"></i> Ventas</a></li>
-          <li><a href="index.php?view=prove"><i class="fa fa-child"></i> Proveedores</a></li>
-          <li><a href="index.php?view=clientes"><i class="fa fa-child"></i> Clientes</a></li>
+          <li><a href="index.php?view=sum" style="color: #fff;"><i class="fa fa-male"></i> Almacen</a></li>
+          <li><a href="index.php?view=cotizacion"style="color: #fff;"><i class="fa fa-table"></i> Cotizaciones</a></li>
+          <li><a href="index.php?view=venta"style="color: #fff;"><i class="fa fa-usd"></i> Ventas</a></li>
+          <li><a href="index.php?view=prove"style="color: #fff;"><i class="fa fa-child"></i> Proveedores</a></li>
+          <li><a href="index.php?view=clientes"style="color: #fff;"><i class="fa fa-child"></i> Clientes</a></li>
         </ul></li>
 
         <?php endif;?>
@@ -151,9 +151,9 @@ if(Session::getUID()!=""){
 
   }?>
 
-          <ul class="nav navbar-nav navbar-right navbar-user">
+          <ul class="nav navbar-nav navbar-right navbar-user" style="color: #fff;">
             <li class="dropdown user-dropdown">
-        <a href="#" class="" data-toggle="dropdown">
+        <a href="#" class="" data-toggle="dropdown" style="color: #fff;">
         <?php echo $user; ?> <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">

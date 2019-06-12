@@ -4,7 +4,7 @@ $alumns = MarketingData::getAll();
 <div class="row">
 	<div class="col-md-12">
 		<h1>Marketing</h1>
-	<!--<a href="index.php?view=newsum" class="btn btn-default"><i class='fa fa-user-plus'></i> Nuevo producto</a>-->
+	<a href="./core/modules/index/view/email/register.php" class="btn btn-default"><i class='fa fa-user-plus'></i> Enviar Cupon</a>
 <br><br>
 			<?php
 					if(count($alumns)>0){
