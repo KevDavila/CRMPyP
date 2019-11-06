@@ -3,7 +3,7 @@
 if(count($_POST)>0){
 	$user = new ClienteData();
 	$user->nomb = $_POST["nombre"];
-	$user->apel = $_POST["apellido"];
+	$user->direc = $_POST["Direccion"];
 	$user->ed = $_POST["edad"];
 	$user->fec = $_POST["fecha_nacimiento"];
 	$user->nume = $_POST["numero_telefono"];
