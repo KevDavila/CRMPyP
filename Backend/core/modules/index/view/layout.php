@@ -130,19 +130,32 @@ if(Session::getUID()!=""):
           <li><a href="index.php?view=marketing"style="color: #fff;"><i class="fa fa-wifi"></i> Marketing</a></li>
           <!--<li><a href="index.php?view=encuestas"><i class="fa fa-comments-o"></i> Encuestas Marketing</a></li>-->
 
-          <li><a href="index.php?view=sum"><i class="fa fa-male"></i> Almacen</a></li>
-          <li><a href="index.php?view=cotizacion"><i class="fa fa-table"></i> Cotizaciones</a></li>
-          <li><a href="index.php?view=venta"><i class="fa fa-usd"></i> Ventas</a></li>
-          <li><a href="index.php?view=prove"><i class="fa fa-child"></i> Proveedores</a></li>
-          <li><a href="index.php?view=clientes"><i class="fa fa-child"></i> Clientes</a></li>
- <li><a href="#" class="fa fa-money" data-toggle="dropdown"> Finanzas<span class="caret"></span></a>
+          <li><a href="index.php?view=sum"style="color: #fff;"><i class="fa fa-male"></i> Almacen</a></li>
+          <li><a href="index.php?view=cotizacion"style="color: #fff;"><i class="fa fa-table"></i> Cotizaciones</a></li>
+          <li><a href="index.php?view=venta"style="color: #fff;"><i class="fa fa-usd"></i> Ventas</a></li>
+          <li><a href="index.php?view=prove"style="color: #fff;"><i class="fa fa-child"></i> Proveedores</a></li>
+          <li><a href="index.php?view=clientes"style="color: #fff;"><i class="fa fa-child"></i> Clientes</a></li>
+ <li><a href="#" class="fa fa-money" data-toggle="dropdown"style="color: #fff;"> Finanzas<span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Registro de Ingresos</a></li>
+          <li><a href="index.php?view=gastos"><i class="fa fa-check"></i> Gastos</a></li>
           <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Empleados</a></li>
           <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
         </ul></li>
         
-        
+        <li><a href="#" class="fa fa-user" data-toggle="dropdown"style="color: #fff;">Gestión de Suministros<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.php?view=sum"><i class="fa fa-check"></i> Agregar Suministros</a></li>
+                <li><a href="index.php?view=prove"><i class="fa fa-male"></i> Informacion de Proveedor</a></li>
+                <li><a href="index.php?view=locals"><i class="fa fa-table"></i> Locales</a></li>
+                <li><a href="index.php?view=trabajos"><i class="fa fa-table"></i> Trabajos</a></li>
+              </ul></li>
+              <li><a href="#" class="fa fa-clipboard" data-toggle="dropdown"style="color: #fff;"> Recursos Humanos<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Asistencia</a></li>
+          <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Empleados</a></li>
+          <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
+          <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
+        </ul></li>
 
 
         <?php endif;?>
