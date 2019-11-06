@@ -3,11 +3,11 @@ class ClienteData {
 	public static $tablename = "clientes";
 	public function ClienteData(){
 		$this->nomb = "";
-		/*$this->apel = "";
+		$this->direc = "";
 		$this->ed = "";
 		$this->fec = "";
 		$this->nume =  "";
-		$this->corr = "";*/
+		$this->corr = "";
 
 	}
 
@@ -18,8 +18,8 @@ class ClienteData {
 	}*/
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (nombre)";
-		$sql .= "value (\"$this->nomb\")";
+		$sql = "insert into ".self::$tablename." (nombre,direccion,correo,fecha_nac,edad,telefono)";
+		$sql .= "value (\"$this->nomb\",\"$this->direc\",\"$this->corr\",\"$this->fec\",\"$this->ed\",\"$this->nume\")";
 		return Executor::doit($sql);
 	}
 /*

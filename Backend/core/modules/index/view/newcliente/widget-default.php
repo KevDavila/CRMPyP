@@ -11,14 +11,6 @@
       <input type="text" name="nombre" required class="form-control" id="name" placeholder="Nombre">
     </div>
   </div>
-
-  <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Apellido*</label>
-    <div class="col-md-6">
-      <input type="text" name="apellido" required class="form-control" id="name" placeholder="Apellido">
-    </div>
-  </div>
-
   
 
 	<div class="form-group">

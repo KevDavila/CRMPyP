@@ -19,7 +19,7 @@ class VentaData {
 			<h1>Historial </h1>
 
 
-	<a href="../email/sendemail.php" class="btn btn-default"><i class='fa fa-user-plus'></i> Enviar email</a>
+	<a href="./core/modules/index/view/email/register.php" class="btn btn-default"><i class='fa fa-user-plus'></i> Enviar email</a>
 	<br>
 	<br>
 			<?php

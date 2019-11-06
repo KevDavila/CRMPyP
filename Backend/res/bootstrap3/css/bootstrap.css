@@ -4490,7 +4490,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #168e1a;
   border-color: #080808;
 }
 
@@ -4960,7 +4960,7 @@ a.list-group-item.active > .badge,
   max-width: 100%;
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #ffffff;
+  background-color: #168e1a;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5316,7 +5316,7 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: #168e1a;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5450,7 +5450,7 @@ a.list-group-item:focus {
 }
 
 .panel-primary > .panel-heading {
-  color: #ffffff;
+  color: #168e1a;
   background-color: #428bca;
   border-color: #428bca;
 }
