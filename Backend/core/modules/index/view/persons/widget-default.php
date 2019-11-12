@@ -1,5 +1,5 @@
 <?php
-$alumns = PersonData::getAll();
+$alumns = EmpleadoData::getAll();
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -23,9 +23,9 @@ $alumns = PersonData::getAll();
 				$alumn = $al;
 				?>
 				<tr>
-				<td><?php echo $alumn->name ?></td>
-				<td><?php echo $alumn->lastname; ?></td>
-				<td><?php echo $alumn->department ?></td>
+				<td><?php echo $alumn->nombre ?></td>
+				<td><?php echo $alumn->ape_paterno; ?></td>
+				<td><?php echo $alumn->ape_materno ?></td>
 				<td style="width:160px;">
 				 <a href="index.php?view=viewperson&id=<?php echo $alumn->id;?>" class="btn btn-info btn-xs"> Ver</a>
 				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs"> Editar</a>

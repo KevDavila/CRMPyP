@@ -1,7 +1,7 @@
 <?php
-class PersonData {
+class EmpleadoData {
 	public static $tablename = "empleado";
-	public function PersonData(){
+	public function EmpleadoData(){
 		$this->title = "";
 		$this->department = "";
 		
@@ -41,21 +41,21 @@ class PersonData {
 	public static function getById($id){
 		$sql = "select * from ".self::$tablename." where id=$id";
 		$query = Executor::doit($sql);
-		return Model::one($query[0],new PersonData());
+		return Model::one($query[0],new EmpleadoData());
 	}
 
 
 	public static function getAll(){
-		$sql = "select * from ".self::$tablename." order by created_at desc";
+		$sql = "select * from ".self::$tablename;
 		$query = Executor::doit($sql);
-		return Model::many($query[0],new PersonData());
+		return Model::many($query[0],new EmpleadoData());
 	}
 
 
 	public static function getAllUnActive(){
 		$sql = "select * from client where last_active_at<=date_sub(NOW(),interval 3 second)";
 		$query = Executor::doit($sql);
-		return Model::many($query[0],new PersonData());
+		return Model::many($query[0],new EmpleadoData());
 	}
 
 
@@ -65,7 +65,7 @@ class PersonData {
 	public static function getLike($q){
 		$sql = "select * from ".self::$tablename." where title like '%$q%' or email like '%$q%'";
 		$query = Executor::doit($sql);
-		return Model::many($query[0],new PersonData());
+		return Model::many($query[0],new EmpleadoData());
 	}
 
 }
