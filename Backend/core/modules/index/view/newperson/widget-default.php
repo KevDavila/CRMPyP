@@ -1,8 +1,8 @@
 <div class="row">
 	<div class="col-md-12">
-	<h1>Nueva Persona</h1>
+	<h1>Nuevo Empleado</h1>
 	<br>
-		<form class="form-horizontal" method="post" id="addcategory" action="index.php?view=addperson" role="form">
+		<form class="form-horizontal" method="POST" id="addcategory" action="index.php?view=addperson" role="form">
 
 
   <div class="form-group">
@@ -13,28 +13,28 @@
   </div>
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Apellido(s)*</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Apellido Paterno*</label>
     <div class="col-md-6">
       <input type="text" name="lastname" required class="form-control" id="name" placeholder="Apellidos" required="">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Domicilio*</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Apellido Materno</label>
     <div class="col-md-6">
       <input type="text" name="address"  class="form-control" id="name" placeholder="Domicilio" required="">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Genero*</label>
     <div class="col-md-6">
       <input type="text" name="email"  class="form-control" id="name" placeholder="Email" required="">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Telefono*</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Fecha de Nacimiento</label>
     <div class="col-md-6">
       <input type="text" name="phone"  class="form-control" id="name" placeholder="Telefono" required="">
     </div>

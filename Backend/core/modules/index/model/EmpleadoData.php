@@ -2,19 +2,19 @@
 class EmpleadoData {
 	public static $tablename = "empleado";
 	public function EmpleadoData(){
-		$this->title = "";
+		$this->id_empleado = "";
+		$this->name = "";		
+		$this->lastname = "";
+		$this->address = "";
+		$this->email = "";
+		$this->phone = "";
 		$this->department = "";
 		
-		$this->email = "";
-		$this->image = "";
-		$this->password = "";
-		$this->is_public = "0";
-		$this->created_at = "NOW()";
 	}
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (name,lastname,address,phone,department,email,user_id,created_at,c1_fullname,c1_address,c1_phone,c1_note) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->department\",\"$this->email\",$this->user_id,$this->created_at,\"$this->c1_fullname\",\"$this->c1_address\",\"$this->c1_phone\",\"$this->c1_note\")";
+		$sql = "insert into ".self::$tablename." (nombre,ape_paterno,ape_materno,genero,fechaNac,departamento) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->department\",\"$this->email\")";
 		return Executor::doit($sql);
 	}
 
@@ -23,7 +23,7 @@ class EmpleadoData {
 		Executor::doit($sql);
 	}
 	public function del(){
-		$sql = "delete from ".self::$tablename." where id=$this->id";
+		$sql = "delete from ".self::$tablename." where id_empleado=$this->id_empleado";
 		Executor::doit($sql);
 	}
 
@@ -39,7 +39,7 @@ class EmpleadoData {
 	}
 
 	public static function getById($id){
-		$sql = "select * from ".self::$tablename." where id=$id";
+		$sql = "select * from ".self::$tablename." where id_empleado=$id";
 		$query = Executor::doit($sql);
 		return Model::one($query[0],new EmpleadoData());
 	}
