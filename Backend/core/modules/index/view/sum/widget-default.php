@@ -13,6 +13,7 @@ $alumns = SumData::getAll();
 
 			<table class="table table-bordered table-hover">
 			<thead>
+			<th>ID</th>
 			<th>Codigo Barra</th>
 			<th>Producto</th>
 			<th>Modelo</th>
@@ -25,6 +26,7 @@ $alumns = SumData::getAll();
 					$alumn = $al;
 					?>
 					<tr>
+						<td><?php echo $alumn->id_producto;?></td>
 						<td><?php echo $alumn->codigo_barra;?></td>
 						<td><?php echo $alumn->tipo_producto;?></td>
 						<td><?php echo $alumn->modelo;?></td>

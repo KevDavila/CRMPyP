@@ -4,7 +4,7 @@ if(count($_POST)>0){
 	$user = new GastosData();
 	$user->monto = $_POST["monto"];
 	$user->descripcion = $_POST["descripcion"];
-	$user->fecha = $_POST["fecha"];
+	//$user->fecha = $_POST["fecha"];
 	
 
 	
@@ -13,7 +13,7 @@ if(count($_POST)>0){
 	$u = $user->add();
 
 
-print "<script>window.location='index.php?view=gastos';</script>";
+//print "<script>window.location='index.php?view=gastos';</script>";
 
 
 }

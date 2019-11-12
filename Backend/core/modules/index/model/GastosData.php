@@ -16,8 +16,8 @@ class GastosData {
 	}*/
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (monto,descripcion,fecha)";
-		$sql .= "value (\"$this->monto\",\"$this->descripcion\",\"$this->fecha\")";
+		$sql = "insert into ".self::$tablename." (monto,descripcion)";
+		$sql .= "value (\"$this->monto\",\"$this->descripcion\")";
 		return Executor::doit($sql);
 	}
 /*

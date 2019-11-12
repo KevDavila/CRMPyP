@@ -43,7 +43,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Correo*</label>
     <div class="col-md-6">
-      <input type="text" name="correo"  class="form-control" id="name" placeholder="Correo">
+      <input type="email" name="correo"  class="form-control" id="name" placeholder="Correo">
     </div>
   </div>
 

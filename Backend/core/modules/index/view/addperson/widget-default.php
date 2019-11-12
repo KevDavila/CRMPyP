@@ -2,8 +2,8 @@
 
 if(count($_POST)>0){
 	$user = new EmpleadoData();
-	$user->monto = $_POST["name"];
-	$user->descripcion = $_POST["lastname"];
+	$user->name = $_POST["name"];
+	$user->lastname = $_POST["lastname"];
 	$user->address = $_POST["address"];
 	$user->email = $_POST["email"];
 	$user->phone = $_POST["phone"];

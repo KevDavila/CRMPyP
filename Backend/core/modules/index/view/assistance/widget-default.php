@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<h1>Asistencia</h1>
-<!--	<a href="index.php?view=list&team_id=<?php echo $_GET["team_id"]; ?>" class="btn btn-default"><i class='fa fa-check'></i> Asistencia</a> -->
+<a href="index.php?view=newasistencia" class="btn btn-default"><i class='fa fa-user-plus'></i>Ingresar Asistencia</a>
 <form class="form-horizontal" id="loadlist" role="form">
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Seleccionar Fecha:</label>

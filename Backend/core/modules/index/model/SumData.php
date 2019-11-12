@@ -2,18 +2,18 @@
 class SumData {
 	public static $tablename = "productos";
 	public function SumData(){
-		$this->codigo_barra = "codigo_barra";
-		$this->tipo_producto = "tipo_producto";
-		$this->color = "Color";
-		$this->modelo = "modelo";
-	  $this->description = "description";
-		$this->precio_unitario = "precio_unitario";
-	  $this->cantidad = "cantidad";
+		$this->codigo_barra = "";
+		$this->tipo_producto = "";
+		$this->color = "";
+		$this->modelo = "";
+	  $this->description = "";
+		$this->precio_unitario = "";
+	  $this->cantidad = "";
 	}
 
 	public function add(){
 		$sql = "insert into ".self::$tablename." (codigo_barra,tipo_producto,Color,modelo,description,precio_unitario,cantidad)";
-		$sql .= "value (\"$this->codigo_barra\",\"$this->tipo_producto\",\"$this->corlor\",\"$this->modelo\",\"$this->description\",\"$this->precio_unitario\",\"$this->cantidad\")";
+		$sql .= "value (\"$this->codigo_barra\",\"$this->tipo_producto\",\"$this->color\",\"$this->modelo\",\"$this->description\",\"$this->precio_unitario\",\"$this->cantidad\")";
 		return Executor::doit($sql);
 	}
 	public function del(){

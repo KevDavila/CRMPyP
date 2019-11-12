@@ -2,13 +2,13 @@
 
 if(count($_POST)>0){
 	$user = new SumData();
-	$user->codi_summ = $_POST["codi_summ"];
-	$user->nom_summ = $_POST["nom_summ"];
-	$user->color_summ = $_POST["color_summ"];
-	$user->modelo_summ = $_POST["modelo_summ"];
-	$user->descrip_summ = $_POST["descrip_summ"];
-	$user->precio_summ = $_POST["precio_summ"];
-	$user->cant_summ = $_POST["cant_summ"];
+	$user->codigo_barra = $_POST["codi_summ"];
+	$user->tipo_producto = $_POST["nom_summ"];
+	$user->color = $_POST["color_summ"];
+	$user->modelo = $_POST["modelo_summ"];
+	$user->descripcion = $_POST["descrip_summ"];
+	$user->precio_unitario = $_POST["precio_summ"];
+	$user->cantidad = $_POST["cant_summ"];
 
 	$u = $user->add();
 
