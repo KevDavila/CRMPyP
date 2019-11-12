@@ -13,7 +13,7 @@ $alumns = EmpleadoData::getAll();
 
 			<table class="table table-bordered table-hover">
 			<thead>
-			<th>Id</th>
+			<th>Id_Empleado</th>
 			<th>Nombre(s)</th>
 			<th>Apellido Paterno</th>
 			<th>Apellido Materno</th>
