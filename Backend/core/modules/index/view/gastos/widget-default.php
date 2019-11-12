@@ -5,9 +5,7 @@ $alumns = GastosData::getAll();
 	<div class="col-md-12">
 		<h1>Gastos</h1>
 
-	<a href="./core/modules/index/view/email/register.php" class="btn btn-default"><i class='fa fa-user-plus'></i>Agregar Gastos</a>
-
-	<a href="./core/modules/index/view/email/register.php" class="btn btn-default"><i class='fa fa-user-plus'></i> Enviar Cupon</a>
+	<a href="index.php?view=newgasto" class="btn btn-default"><i class='fa fa-user-plus'></i>Ingresar Gasto</a>
 
 <br><br>
 			<?php
@@ -20,6 +18,7 @@ $alumns = GastosData::getAll();
 			<th>ID Gasto</th>
 			<th>Descripcion</th>
 			<th>Monto</th>
+			<th>Fecha</th>
 			<th>Tipo</th>
 			</thead>
 				</tr>
@@ -31,6 +30,7 @@ $alumns = GastosData::getAll();
 						<td><?php echo $alumn->id_gasto;?></td>
 						<td><?php echo $alumn->descripcion;?></td>
 						<td><?php echo $alumn->monto;?></td>
+						<td><?php echo $alumn->fecha;?></td>
 						<td><?php echo $alumn->id_tipo_gasto;?></td>
 
 					</tr>

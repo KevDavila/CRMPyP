@@ -1,13 +1,11 @@
 <?php
 class GastosData {
 	public static $tablename = "gastos";
-	public function ClienteData(){
-		$this->nomb = "";
-		$this->direc = "";
-		$this->ed = "";
-		$this->fec = "";
-		$this->nume =  "";
-		$this->corr = "";
+	public function GastosData(){
+		$this->monto = "";
+		$this->descripcion = "";
+		$this->fecha = "";
+		
 
 	}
 
@@ -18,8 +16,8 @@ class GastosData {
 	}*/
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (nombre,direccion,correo,fecha_nac,edad,telefono)";
-		$sql .= "value (\"$this->nomb\",\"$this->direc\",\"$this->corr\",\"$this->fec\",\"$this->ed\",\"$this->nume\")";
+		$sql = "insert into ".self::$tablename." (monto,descripcion,fecha)";
+		$sql .= "value (\"$this->monto\",\"$this->descripcion\",\"$this->fecha\")";
 		return Executor::doit($sql);
 	}
 /*
