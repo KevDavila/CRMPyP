@@ -10,7 +10,7 @@ $pass = sha1(md5($_POST['password']));
 $base = new Database();
 $con = $base->connect();
  $sql = "select * from usuarios where ((email= \"".$user."\" or username= \"".$user."\") and password= \"".$pass."\") and is_active=1";
-//print $sql;
+print $sql;
 $query = $con->query($sql);
 $found = false;
 $userid = null;
