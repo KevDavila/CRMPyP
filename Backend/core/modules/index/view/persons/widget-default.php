@@ -16,10 +16,17 @@ $alumns = EmpleadoData::getAll();
 			<th>Id_Empleado</th>
 			<th>Nombre(s)</th>
 			<th>Apellido Paterno</th>
-			<th>Apellido Materno</th>
-			<th>Genero</th>
+			<th>Apellido Materno</th>			
 			<th>Fecha de Nacimiento</th>
+			<th>RFC</th>
+			<th>escolaridad</th>
+			<th>direccion</th>
+			<th>Telefono</th>
+			<th>Correo</th>
 			<th>Departamento</th>
+			<th>Fecha de Ingreso</th>
+			<th>ID_Horario</th>
+			<th>ID_ausencia</th>
 			</thead>
 			<?php
 			foreach($alumns as $al){
@@ -29,10 +36,17 @@ $alumns = EmpleadoData::getAll();
 				<td><?php echo $alumn->id_empleado ?></td>
 				<td><?php echo $alumn->nombre ?></td>
 				<td><?php echo $alumn->ape_paterno; ?></td>
-				<td><?php echo $alumn->ape_materno ?></td>
-				<td><?php echo $alumn->genero ?></td>
+				<td><?php echo $alumn->ape_materno ?></td>				
 				<td><?php echo $alumn->fechaNac ?></td>
+				<td><?php echo $alumn->rfc?></td>
+				<td><?php echo $alumn->escolaridad?></td>
+				<td><?php echo $alumn->direccion?></td>
+				<td><?php echo $alumn->telefono?></td>
+				<td><?php echo $alumn->correo?></td>
 				<td><?php echo $alumn->departamento ?></td>
+				<td><?php echo $alumn->fechaingreso?></td>
+				<td><?php echo $alumn->id_horario?></td>
+				<td><?php echo $alumn->id_ausencia?></td>
 				<td style="width:160px;">
 				 <a href="index.php?view=viewperson&id=<?php echo $alumn->id;?>" class="btn btn-info btn-xs"> Ver</a>
 				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs"> Editar</a>

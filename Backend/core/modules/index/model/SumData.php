@@ -1,6 +1,6 @@
 <?php
 class SumData {
-	public static $tablename = "productos";
+	public static $tablename = "materiaprima";
 	public function SumData(){
 		$this->codigo_barra = "";
 		$this->tipo_producto = "";

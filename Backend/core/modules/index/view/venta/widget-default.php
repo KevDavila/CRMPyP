@@ -6,6 +6,7 @@ $alumns = VentaData::getAll();
 		<h1>Ventas</h1>
 	<a href="index.php?view=maspop" class="btn btn-default"><i class='fa fa-user-plus'></i>Producto Mas Popular</a>
 	<a href="index.php?view=menospop" class="btn btn-default"><i class='fa fa-user-plus'></i>Producto Menos Popular</a>
+	<a href="index.php?view=hacerventa" class="btn btn-default"><i class='fa fa-user-plus'></i>Hacer Venta</a>
 <br><br>
 			<?php
 					if(count($alumns)>0){
