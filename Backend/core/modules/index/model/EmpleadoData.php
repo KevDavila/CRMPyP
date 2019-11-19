@@ -9,12 +9,20 @@ class EmpleadoData {
 		$this->email = "";
 		$this->phone = "";
 		$this->department = "";
+		$this->rfc = "";
+	$this->escolaridad ="";
+	$this->direccion = "";
+	$this->telefono = "";
+	$this->correo = "";
+	$this->ingreso = "";
+	$this->idhorario = "";
+	$this->idausencia = "";
 		
 	}
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (nombre,ape_paterno,ape_materno,genero,fechaNac,departamento) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->department\",\"$this->email\")";
+		$sql = "insert into ".self::$tablename." (nombre,ape_paterno,ape_materno,fechaNac,rfc,escolaridad,direccion,telefono,correo,departamento,fechaingreso) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->rfc\",\"$this->escolaridad\",\"$this->direccion\",\"$this->telefono\",\"$this->correo\",\"$this->department\",\"$this->ingreso\")";
 		return Executor::doit($sql);
 	}
 
@@ -67,7 +75,11 @@ class EmpleadoData {
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new EmpleadoData());
 	}
-
+public static function asistencia($q){
+		$sql = "SELECT * FROM horario";
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new EmpleadoData());
+	}
 }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 class AssistanceData {
-	public static $tablename = "asistencia";
+	public static $tablename = "horario";
 
 	public function AssistanceData(){
 		$this->name = "";

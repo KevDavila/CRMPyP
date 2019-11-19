@@ -1,3 +1,6 @@
+<?php
+$alumns = AssistanceData::getAll();
+?>
 <div class="row">
 	<div class="col-md-12">
 		<h1>Asistencia</h1>
@@ -15,9 +18,47 @@
   </div>
 </form>
 
-<div id="data">
-	<p class="alert alert-warning">No hay datos, por favor selecciona una fecha.</p>
-</div>
+<?php
+		if(count($alumns)>0){
+			// si hay usuarios
+			?>
+
+			<table class="table table-bordered table-hover">
+			<thead>
+			<th>Id_Horario</th>
+			<th>Nombre</th>
+			<th>Hora de Entrada</th>
+			<th>Hora de Salida</th>
+			<th>Fecha</th>			
+			<th>Horas Extras</th>
+			</thead>
+			<?php
+			foreach($alumns as $al){
+				$alumn = $al;
+				?>
+				<tr>
+				<td><?php echo $alumn->id_horario ?></td>
+				<td><?php echo $alumn->nombre ?></td>
+				<td><?php echo $alumn->hentrada ?></td>
+				<td><?php echo $alumn->hsalida; ?></td>
+				<td><?php echo $alumn->fecha ?></td>				
+				<td><?php echo $alumn->hextra ?></td>
+				
+				<td style="width:160px;">
+				 <a href="index.php?view=viewperson&id=<?php echo $alumn->id;?>" class="btn btn-info btn-xs"> Ver</a>
+				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs"> Editar</a>
+				 <a href="index.php?action=delperson&id_empleado=<?php echo $alumn->id_empleado;?>"
+				 class="btn btn-danger btn-xs">Eliminar</a></td>
+				</tr>
+				<?php
+			}
+			echo "</table>";
+		}else{
+				echo "<p class='alert alert-danger'>No hay Personas</p>";
+			}
+		?>
+
+
 
 	</div>
 </div>

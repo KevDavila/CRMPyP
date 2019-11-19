@@ -15,28 +15,52 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido Paterno*</label>
     <div class="col-md-6">
-      <input type="text" name="lastname" required class="form-control" id="name" placeholder="Apellidos" required="">
+      <input type="text" name="lastname" required class="form-control" id="name" placeholder="Apellido Paterno" required="">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido Materno</label>
     <div class="col-md-6">
-      <input type="text" name="address"  class="form-control" id="name" placeholder="Domicilio" required="">
+      <input type="text" name="address"  class="form-control" id="name" placeholder="Apellido Materno" required="">
     </div>
   </div>
 
-  <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Genero*</label>
-    <div class="col-md-6">
-      <input type="text" name="email"  class="form-control" id="name" placeholder="Email" required="">
-    </div>
-  </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Fecha de Nacimiento</label>
     <div class="col-md-6">
-      <input type="text" name="phone"  class="form-control" id="name" placeholder="Telefono" required="">
+      <input type="text" name="phone"  class="form-control" id="name" placeholder="Fecha de Nacimiento" required="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">RFC</label>
+    <div class="col-md-6">
+      <input type="text" name="rfc"  class="form-control" id="name" placeholder="RFC" required="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Escolaridad</label>
+    <div class="col-md-6">
+      <input type="text" name="escolaridad"  class="form-control" id="name" placeholder="Escolaridad" required="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Direccion</label>
+    <div class="col-md-6">
+      <input type="text" name="direccion"  class="form-control" id="name" placeholder="Direccion" required="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Telefono</label>
+    <div class="col-md-6">
+      <input type="text" name="telefono"  class="form-control" id="name" placeholder="Telefono" required="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Correo</label>
+    <div class="col-md-6">
+      <input type="mail" name="correo"  class="form-control" id="name" placeholder="Correo" required="">
     </div>
   </div>
 
@@ -44,6 +68,12 @@
     <label for="inputEmail1" class="col-lg-2 control-label">Departamento*</label>
     <div class="col-md-6">
       <input type="text" name="department"  class="form-control" id="name" placeholder="Departamento" required="">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Fecha de Ingreso</label>
+    <div class="col-md-6">
+      <input type="text" name="ingreso"  class="form-control" id="name" placeholder="Fecha de Ingreso" required="">
     </div>
   </div>
 <!--
