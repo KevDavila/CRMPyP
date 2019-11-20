@@ -17,12 +17,13 @@ class EmpleadoData {
 	$this->ingreso = "";
 	$this->idhorario = "";
 	$this->idausencia = "";
+	$this->idhorario = "";
 		
 	}
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (nombre,ape_paterno,ape_materno,fechaNac,rfc,escolaridad,direccion,telefono,correo,departamento,fechaingreso) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->rfc\",\"$this->escolaridad\",\"$this->direccion\",\"$this->telefono\",\"$this->correo\",\"$this->department\",\"$this->ingreso\")";
+		$sql = "insert into ".self::$tablename." (nombre,ape_paterno,ape_materno,fechaNac,rfc,escolaridad,direccion,telefono,correo,departamento,fechaingreso,id_horario) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->address\",\"$this->phone\",\"$this->rfc\",\"$this->escolaridad\",\"$this->direccion\",\"$this->telefono\",\"$this->correo\",\"$this->department\",\"$this->ingreso\",\"$this->idhorario\")";
 		return Executor::doit($sql);
 	}
 

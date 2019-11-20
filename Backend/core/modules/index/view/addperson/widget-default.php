@@ -13,6 +13,7 @@ if(count($_POST)>0){
 	$user->telefono = $_POST["telefono"];
 	$user->correo = $_POST["correo"];
 	$user->ingreso = $_POST["ingreso"];
+	$user->idhorario = $_POST["idhorario"];
 
 	
 
@@ -20,7 +21,7 @@ if(count($_POST)>0){
 	$u = $user->add();
 
 
-//print "<script>window.location='index.php?view=persons';</script>";
+print "<script>window.location='index.php?view=persons';</script>";
 
 
 }

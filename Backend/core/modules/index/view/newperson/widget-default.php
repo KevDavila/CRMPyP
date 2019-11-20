@@ -70,10 +70,18 @@
       <input type="text" name="department"  class="form-control" id="name" placeholder="Departamento" required="">
     </div>
   </div>
+
    <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Fecha de Ingreso</label>
     <div class="col-md-6">
       <input type="text" name="ingreso"  class="form-control" id="name" placeholder="Fecha de Ingreso" required="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">ID Horario</label>
+    <div class="col-md-6">
+      <input type="text" name="idhorario"  class="form-control" id="name" placeholder="ID Horario" required="">
     </div>
   </div>
 <!--

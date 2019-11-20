@@ -25,6 +25,7 @@ $alumns = AssistanceData::getLike();
 
 			<table class="table table-bordered table-hover">
 			<thead>
+				<th>ID horario </th>
 			<th>Nombre</th>
 			<th>Hora de Entrada</th>
 			<th>Hora de Salida</th>
@@ -36,19 +37,19 @@ $alumns = AssistanceData::getLike();
 				$alumn = $al;
 				?>
 				<tr>
-				<!--<td><?php echo $alumn->id_horario ?></td>-->
+				<td><?php echo $alumn->id_horario ?></td>
 				<td><?php echo $alumn->nombre ?></td>
 				<td><?php echo $alumn->hentrada ?></td>
 				<td><?php echo $alumn->hsalida; ?></td>
 				<td><?php echo $alumn->fecha ?></td>			
 				<td><?php echo $alumn->hextra ?></td>
 				
-				<td style="width:160px;">
+				<!--<td style="width:160px;">
 				 <a href="index.php?view=viewperson&id=<?php echo $alumn->id;?>" class="btn btn-info btn-xs"> Ver</a>
 				 <a href="index.php?view=editperson&id=<?php echo $alumn->id;?>" class="btn btn-warning btn-xs"> Editar</a>
-				 <a href="index.php?action=delperson&id_empleado=<?php echo $alumn->id_empleado;?>"
+				 <a href="index.php?action=delasistencia&id_horario=<?php echo $alumn->id_horario;?>"
 				 class="btn btn-danger btn-xs">Eliminar</a></td>
-				</tr>
+				</tr>-->
 				<?php
 			}
 			echo "</table>";
