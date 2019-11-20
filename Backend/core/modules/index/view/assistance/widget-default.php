@@ -1,5 +1,5 @@
 <?php
-$alumns = AssistanceData::getAll();
+$alumns = AssistanceData::getLike();
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -25,7 +25,6 @@ $alumns = AssistanceData::getAll();
 
 			<table class="table table-bordered table-hover">
 			<thead>
-			<th>Id_Horario</th>
 			<th>Nombre</th>
 			<th>Hora de Entrada</th>
 			<th>Hora de Salida</th>
@@ -37,11 +36,11 @@ $alumns = AssistanceData::getAll();
 				$alumn = $al;
 				?>
 				<tr>
-				<td><?php echo $alumn->id_horario ?></td>
+				<!--<td><?php echo $alumn->id_horario ?></td>-->
 				<td><?php echo $alumn->nombre ?></td>
 				<td><?php echo $alumn->hentrada ?></td>
 				<td><?php echo $alumn->hsalida; ?></td>
-				<td><?php echo $alumn->fecha ?></td>				
+				<td><?php echo $alumn->fecha ?></td>			
 				<td><?php echo $alumn->hextra ?></td>
 				
 				<td style="width:160px;">

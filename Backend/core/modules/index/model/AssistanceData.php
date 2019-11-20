@@ -50,8 +50,8 @@ class AssistanceData {
 
 	}
 	
-	public static function getLike($q){
-		$sql = "select * from ".self::$tablename." where name like '%$q%'";
+	public static function getLike(){
+		$sql = "SELECT empleado.nombre, horario.hentrada, horario.hsalida, horario.fecha, horario.hextra FROM empleado INNER JOIN horario ON empleado.id_horario=horario.id_horario";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new AssistanceData());
 	}
