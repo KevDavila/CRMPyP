@@ -9,12 +9,19 @@ class AssistanceData {
 		$this->fecha = "";
 		$this->hextra = "";
 		$this->id_horario = "";
+		$this->id_ausencia = "";
 		
 	}
 
 	public function add(){
 		$sql = "insert into ".self::$tablename." (id_horario,hentrada,hsalida,fecha,hextra) ";
 		echo $sql .= "value (\"$this->id_hora\",\"$this->hentrada\",\"$this->hsalida\",\"$this->fecha\",\"$this->hextra\")";
+		return Executor::doit($sql);
+	}
+
+	public function addaus(){
+		$sql = "insert into ausencias (id_ausencia,f_inicio,f_final,autorizacion)";
+		echo $sql .="value(\"$this->id_ausencia\",\"$this->f_inici\",\"$this->f_final\",\"$this->aut\")";
 		return Executor::doit($sql);
 	}
 
@@ -58,6 +65,12 @@ class AssistanceData {
 		return Model::many($query[0],new AssistanceData());
 	}
 
+	public static function getAusencia(){
+		$sql = "select * from ausencias";
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new AssistanceData());
+
+	}
 
 }
 

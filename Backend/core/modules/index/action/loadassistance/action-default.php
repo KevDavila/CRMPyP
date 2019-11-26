@@ -1,6 +1,6 @@
 		<?php
 
-		$alumns = PersonData::getAll();
+		$alumns = EmpleadoData::getAll();
 		if(count($alumns)>0){
 			// si hay usuarios
 			?>
@@ -13,11 +13,11 @@
 			<?php
 			foreach($alumns as $al){
 				$alumn = $al;
-				$asist = AssistanceData::getByPD($alumn->id,$_GET["date_at"]);
+				$asist = AssistanceData::getLike($alumn->id,$_GET["date_at"]);
 				$values = array(""=>"Sin seleccion","1"=>"Asistencia","2"=>"Falta","3"=>"Retardo","4"=>"Justificacion");
 				?>
 				<tr>
-				<td style="width:250px;"><?php echo $alumn->name." ".$alumn->lastname; ?></td>
+				<td style="width:250px;"><?php echo $alumn->nombre." ".$alumn->lastname; ?></td>
 				<td>
 
 				<form id="form-<?php echo $al->id; ?>">

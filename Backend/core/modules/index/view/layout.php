@@ -152,6 +152,7 @@ if(Session::getUID()!=""):
               <li><a href="#" class="fa fa-clipboard" data-toggle="dropdown"style="color: #fff;"> Recursos Humanos<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="index.php?view=assistance"><i class="fa fa-check"></i> Asistencia</a></li>
+          <li><a href="index.php?view=ausencias"><i class="fa fa-check"></i> Ausencias</a></li>
           <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Empleados</a></li>
           <li><a href="index.php?view=list"><i class="fa fa-table"></i> Reporte</a></li>
           <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
