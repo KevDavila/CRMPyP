@@ -15,14 +15,14 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Hora de Entrada</label>
     <div class="col-md-6">
-      <input type="time" name="hentrada" required class="form-control" id="name" placeholder="Hora de Entrada" required="">
+      <input type="text" name="hentrada" required class="form-control" id="name" placeholder="Hora de Entrada" required="">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Hora de Salida</label>
     <div class="col-md-6">
-      <input type="time" name="hsalida"  class="form-control" id="name" placeholder="Hora de Salida" required="">
+      <input type="text" name="hsalida"  class="form-control" id="name" placeholder="Hora de Salida" required="">
     </div>
   </div>
 

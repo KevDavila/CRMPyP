@@ -31,7 +31,7 @@
     <div class="col-lg-offset-2 col-lg-10">
     <input type="hidden" name="team_id" value="<?php echo $_GET["team_id"];?>">
       <a href="index.php?view=newasistencia" type="submit" class="btn btn-danger">Cancelar</a>
-      <button type="submit" class="btn btn-primary">Agregar Horario</button>
+      <button type="submit" class="btn btn-primary">Agregar Ausencias</button>
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 <?php
 class GastosData {
-	public static $tablename = "gastos";
+	public static $tablename = "ventas";
 	public function GastosData(){
 		$this->monto = "";
 		$this->descripcion = "";

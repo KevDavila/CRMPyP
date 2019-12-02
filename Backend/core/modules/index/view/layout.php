@@ -135,7 +135,7 @@ if(Session::getUID()!=""):
           <li><a href="index.php?view=venta"style="color: #fff;"><i class="fa fa-usd"></i> Ventas</a></li>
           <li><a href="index.php?view=prove"style="color: #fff;"><i class="fa fa-child"></i> Proveedores</a></li>
           <li><a href="index.php?view=clientes"style="color: #fff;"><i class="fa fa-child"></i> Clientes</a></li>
- <li><a href="#" class="fa fa-money" data-toggle="dropdown"style="color: #fff;"> Finanzas<span class="caret"></span></a>
+ <li><a href="#" class="fa fa-money" data-toggle="dropdown"style="color: #fff;">                        Finanzas<span class="caret"></span></a>
           <ul class="dropdown-menu">
           <li><a href="index.php?view=gastos"><i class="fa fa-check"></i> Gastos</a></li>
           <li><a href="index.php?view=persons"><i class="fa fa-male"></i> Empleados</a></li>
