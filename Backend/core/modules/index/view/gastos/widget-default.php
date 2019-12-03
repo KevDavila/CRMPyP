@@ -15,14 +15,11 @@ $alumns = GastosData::getAll();
 
 			<table class="table table-bordered table-hover">
 			<thead>
-			<th>ID Venta</th>
-			<th>Fecha Pedido</th>
-			<th>Fecha Entrega</th>
-			<th>Descuento</th>
-			<th>Total</th>
-			<th>Cantidad</th>
-			<th>ID Producto</th>
-			<th>ID Cliente</th>
+			<th>ID Gasto</th>
+			<th>Descripcion</th>
+			<th>Monto</th>
+			<th>Fecha</th>
+			
 			</thead>
 				</tr>
 				<?php
@@ -30,15 +27,10 @@ $alumns = GastosData::getAll();
 					$alumn = $al;
 					?>
 					<tr>
-						<td><?php echo $alumn->id_venta;?></td>
-						<td><?php echo $alumn->fecha_pedido;?></td>
-						<td><?php echo $alumn->fecha_entrega;?></td>
-						<td><?php echo $alumn->descuento;?></td>
-						<td><?php echo $alumn->total;?></td>
-						<td><?php echo $alumn->cantidad;?></td>
-						<td><?php echo $alumn->id_producto;?></td>
-						<td><?php echo $alumn->id_cliente;?></td>
-
+						<td><?php echo $alumn->id_gasto;?></td>
+						<td><?php echo $alumn->descripcion;?></td>
+						<td><?php echo $alumn->monto;?></td>
+						<td><?php echo $alumn->fecha;?></td>
 					</tr>
 					<?php
 				}

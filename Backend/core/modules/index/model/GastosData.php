@@ -1,6 +1,6 @@
 <?php
 class GastosData {
-	public static $tablename = "ventas";
+	public static $tablename = "gastos";
 	public function GastosData(){
 		$this->monto = "";
 		$this->descripcion = "";
@@ -16,8 +16,8 @@ class GastosData {
 	}*/
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (monto,descripcion)";
-		$sql .= "value (\"$this->monto\",\"$this->descripcion\")";
+		$sql = "insert into ".self::$tablename." (monto,descripcion,fecha)";
+		$sql .= "value (\"$this->monto\",\"$this->descripcion\",\"$this->fecha\")";
 		return Executor::doit($sql);
 	}
 /*

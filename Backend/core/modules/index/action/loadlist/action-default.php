@@ -10,7 +10,7 @@
 			echo "<p class='alert alert-danger'>Rango Invalido</p>";
 			exit(0);
 		}
-		$alumns = PersonData::getAll();
+		$alumns = AssistanceData::getLike();
 		if(count($alumns)>0){
 			// si hay usuarios
 			?>
@@ -36,25 +36,15 @@
 				$values = array(""=>"Sin seleccion","1"=>"Asistencia","2"=>"Falta","3"=>"Retardo","4"=>"Justificacion");
 				?>
 				<tr>
-				<td style="width:250px;"><?php echo $alumn->name." ".$alumn->lastname; ?></td>
+				<td style="width:250px;"><?php echo $alumn->nombre." ".$alumn->hentrada."".$alumn->hsalida; ?></td>
 			<?php for($i=0;$i<$range;$i++):
 					$date_at= date("Y-m-d",strtotime($_GET["start_at"])+($i*(24*60*60)));
-					$asist = AssistanceData::getByPD($alumn->id,$date_at);
+					$asist = AssistanceData::getLike();
 						?>
 
 
 				<td >
-				<?php
-				//<i class='fa fa-remove'></i> X
-				//<i class='fa fa-check'></i>
-					if($asist!=null){
-						if($asist->kind_id==1){ echo "A"; }
-						else if($asist->kind_id==2){ echo "F"; }
-						else if($asist->kind_id==3){ echo "R"; }
-						else if($asist->kind_id==4){ echo "J"; }
-						
-					}	
-				?>
+				
 
 				</td>
 			<?php endfor; ?>
