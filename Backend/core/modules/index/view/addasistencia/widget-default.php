@@ -11,7 +11,7 @@ if(count($_POST)>0){
 	$u = $user->add();
 
 
-//print "<script>window.location='index.php?view=assistance';</script>";
+print "<script>window.location='index.php?view=assistance';</script>";
 
 
 }
